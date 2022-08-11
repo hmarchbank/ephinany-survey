@@ -1,0 +1,19 @@
+{
+  "name": "ephinany-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hmarchbank/ephinany-survey.git"
+  },
+  "author": "Harry Marchbank",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hmarchbank/ephinany-survey/issues"
+  },
+  "homepage": "https://github.com/hmarchbank/ephinany-survey#readme"
+}
