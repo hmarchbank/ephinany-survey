@@ -1,0 +1,51 @@
+#submitBtn, .continue-button, .answer-button{
+    border: none;
+    background-color: white;
+    margin: 0 auto 1.5rem auto;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#submitBtn{
+    background-color: rgb(75, 235, 232, .6);
+}
+
+#submitBtn:hover{
+    background: rgba(128, 128, 128, 0.587);
+}
+
+.pg3-answer-buttons-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: 100%;
+    margin: 1rem auto;
+}
+
+.tile{
+    width: 30%;
+}
+
+.answer-button{
+    padding: 1rem 2rem;
+    margin: .5rem auto;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.active{
+    border: rgb(180, 60, 60) 3px solid;
+    box-sizing: 0;
+    box-shadow: none;
+}
+
+
+@media only screen and (max-width: 425px){
+    .answer-button{
+        padding: .4rem .8rem;
+        font-size: 1rem;
+    }
+}

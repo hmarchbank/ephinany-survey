@@ -19,7 +19,8 @@ const imgArray = [
 ];
 
 const renderPageTwo = () => {
-//gets resets image and resests main html adds in question for second page.
+  document.getElementById('question').textContent = "How accurate are these quotes"
+// resets image and resests main html adds in questions for second page.
   statementImage.src = `${imgArray[slidePosition]}`;
   mainContainer.style.display = "block";
   endContainer.style.display = "none";
@@ -58,7 +59,7 @@ const renderPageTwo = () => {
 
   for (let star of stars) {
     star.addEventListener("click", () => {
-      //similar code used to move slides and determine end
+      //similar code used to move slides and determine end but at end of slides it intiates rendering of page three
       if (slidePosition < 3) {
         slidePosition++;
         statementImage.src = `${imgArray[slidePosition]}`;
@@ -68,7 +69,6 @@ const renderPageTwo = () => {
         mainContainer.style.display = "none";
 
         document.getElementById("continueBtn").removeEventListener("click", () => (handleClick(button)));
-        console.log(document.getElementById("continueBtn"))
         document.getElementById("continueBtn").addEventListener("click", () => {renderPageThree()});
       }
       for (let star of stars) {
