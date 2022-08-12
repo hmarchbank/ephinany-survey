@@ -1,4 +1,3 @@
-const container = document.getElementById("container")
 const statementImage = document.getElementById("image-statement")
 const answerButtons = document.querySelectorAll(".cat-button")
 
