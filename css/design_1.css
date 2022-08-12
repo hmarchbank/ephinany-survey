@@ -9,6 +9,7 @@
 
 .cat-container {
     width: 25%;
+    margin-bottom: 1rem;
 }
 
 #hiss,
@@ -22,7 +23,7 @@
 }
 
 .cat-text{
-    margin: .2rem auto 2rem auto;
+    margin: .2rem auto 0 auto;
     font-weight: lighter;
     font-size: 1.2rem;
 
@@ -70,4 +71,28 @@
     .cat-text{
         font-size: 2rem;
     }
+}
+
+button{
+}
+
+.active{
+    border: red 5px solid;
+    box-sizing: 0;
+    box-shadow: none;
+}
+
+#submitBtn{
+    border: none;
+    background-color: white;
+    margin: 0 auto 1.5rem auto;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#submitBtn:hover{
+    background: rgba(128, 128, 128, 0.587);
 }

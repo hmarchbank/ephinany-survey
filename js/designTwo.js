@@ -12,13 +12,12 @@ const imgArray = [
     "../img/img_statement_2.png",
     "../img/img_statement_3.png",
     "../img/img_statement_4.png",
-    "../img/img_statement_5.png",
-    "../img/img_statement_6.png"
 ]
 
 
 for (let star of stars){
     star.addEventListener('mouseover', () => {
+        //when star is hoverd over all stars with smaller ratings become solid all other stars stay/revert to regular 
         for (let i = 0; i < stars.length; i++){
             if (i+1 <= star.id){
                 stars[i].classList.add("fa-solid")
@@ -34,11 +33,11 @@ for (let star of stars){
 
 for (let star of stars){
     star.addEventListener('click', () => {
-        if(slidePosition < 5){
+        //similar code used to move slides and determine end
+        if(slidePosition < 3){
             slidePosition++
             statementImage.src=`${imgArray[slidePosition]}`
             customerDetails[`Response_${slidePosition}`] = star.id
-            console.log(customerDetails)
         } else{
             document.getElementById('container').innerHTML = `
             <img class="finish" src="../img/img_control_tool_finish.svg"/>
@@ -47,6 +46,7 @@ for (let star of stars){
             `
         }
         for(let star of stars){
+            //when a new slides appears stars revert to original style
             star.classList.remove("fa-solid")
             star.classList.add("fa-regular")
         }

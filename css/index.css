@@ -11,7 +11,7 @@ body{
 .card-rating{
     width: 45vw;
     min-height: 75vh;
-    margin: 8vh auto;
+    margin: 3vh auto;
     background-color: rgb(68, 177, 229);
     text-align: center;
     border-radius: 5px;
@@ -31,6 +31,14 @@ body{
     height: 40vh;
     width: 90%;
     object-fit: cover;
+}
+
+.finish{
+    margin: 25% auto 0 auto;
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 
