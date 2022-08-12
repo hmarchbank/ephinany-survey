@@ -24,12 +24,7 @@ body{
     border-radius: 5px 5px 0 0;
 }
 
-.question-container{
-    height: 60%;
-}
-
 #image-statement{
-    
     border-radius: 5px;
     height: 40vh;
     width: 90%;
@@ -58,7 +53,7 @@ body{
 }
 
 .cat-text{
-    margin: .2rem auto 3rem auto;
+    margin: .2rem auto 2rem auto;
     font-weight: lighter;
     font-size: 1.2rem;
 
@@ -72,4 +67,8 @@ body{
 
 .cat-button:active{
     border: 1px solid grey;
+}
+
+.finish{
+    margin: 25% auto 0 auto;
 }
