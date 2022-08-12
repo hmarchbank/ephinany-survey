@@ -1,0 +1,73 @@
+/* Design One CSS */
+
+.answer-buttons-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+    margin: 4% auto;
+}
+
+.cat-container {
+    width: 25%;
+}
+
+#hiss,
+#meow,
+#prrr{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: none;
+    border-radius: 5px;
+}
+
+.cat-text{
+    margin: .2rem auto 2rem auto;
+    font-weight: lighter;
+    font-size: 1.2rem;
+
+}
+
+.cat-button {
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.cat-button:active{
+    border: 1px solid grey;
+}
+
+.finish{
+    margin: 25% auto 0 auto;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1000px){
+    .answer-buttons-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cat-container{
+        width: 35%;
+        margin: 0 auto;
+    }
+
+    .cat-text{
+        margin: .2rem auto;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1000px){
+    .cat-container{
+        width: 30%;
+    }
+}
+
+
+@media only screen and (min-width: 2000px){
+    .cat-text{
+        font-size: 2rem;
+    }
+}

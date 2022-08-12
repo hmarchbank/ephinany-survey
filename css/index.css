@@ -1,3 +1,5 @@
+/* All designs */
+
 body{
     margin: none;
     max-height: 100vh;
@@ -7,7 +9,7 @@ body{
 }
 
 .card-rating{
-    width: 40vw;
+    width: 45vw;
     min-height: 75vh;
     margin: 8vh auto;
     background-color: rgb(68, 177, 229);
@@ -31,44 +33,54 @@ body{
     object-fit: cover;
 }
 
-.answer-container{
-    display: flex;
-    justify-content: space-evenly;
-    width: 75%;
-    margin: 4% auto;
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1000px){
+    .card-rating{
+        padding: none;
+        width: 90vw;
+        margin: 0 auto;
+        height: 95vh;
+    }
+
+    h3{
+        padding: none;
+        margin: none;
+    }
+
+    .question{
+        margin: 0;
+    }
+
+    #image-statement{
+        max-width: 95%;
+        object-fit: scale-down;
+        border-radius: 5px;
+    }
+    
+    .question-container{
+        border-radius: 25px;
+
+    }
 }
 
-.cat-container {
-    width: 25%;
+
+@media only screen and (min-width: 500px) and (max-width: 1000px){
+    .cat-container{
+        width: 30%;
+    }
+
+    .question-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #image-statement{
+        margin: 2rem auto;
+        width: 90%;
+        object-fit: cover;
+
+    }
 }
 
-#hiss,
-#meow,
-#prrr{
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    margin: none;
-    border-radius: 5px;
-}
-
-.cat-text{
-    margin: .2rem auto 2rem auto;
-    font-weight: lighter;
-    font-size: 1.2rem;
-
-}
-
-.cat-button {
-    padding: 0;
-    border: none;
-    border-radius: 5px;
-}
-
-.cat-button:active{
-    border: 1px solid grey;
-}
-
-.finish{
-    margin: 25% auto 0 auto;
-}
